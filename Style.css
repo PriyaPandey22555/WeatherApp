@@ -168,3 +168,119 @@ body {
 .welcome-btn:hover {
     opacity: 0.85;
 }
+/* ===== Tablet & Desktop Media Queries ===== */
+
+/* Tablet & Small Laptops */
+@media (min-width: 600px) {
+    .card {
+        max-width: 450px;
+        padding: 40px 35px;
+    }
+
+    .weather h1 {
+        font-size: 80px;
+    }
+
+    .weather h2 {
+        font-size: 45px;
+    }
+
+    .details {
+        padding: 0 20px;
+        margin-top: 40px;
+        flex-direction: row;
+    }
+
+    .weather-icon {
+        max-width: 200px;
+        width: 50%;
+    }
+}
+
+/* Desktop & Large Screens */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 500px;
+        padding: 50px 40px;
+    }
+
+    .weather h1 {
+        font-size: 100px;
+    }
+
+    .weather h2 {
+        font-size: 55px;
+    }
+
+    .welcome-container {
+        max-width: 400px;
+        padding: 40px 30px;
+    }
+
+    .welcome-title {
+        font-size: 28px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+    }
+
+    .welcome-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .weather-icon {
+        max-width: 250px;
+        width: 50%;
+    }
+}
+
+/* Small Phones (Stack details vertically) */
+@media (max-width: 480px) {
+    .details {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .col {
+        justify-content: center;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 28px;
+    }
+
+    .weather-icon {
+        width: 60%;
+        max-width: 120px;
+    }
+
+    .welcome-container {
+        width: 90%;
+        padding: 25px 15px;
+        margin-top: 100px;
+    }
+
+    .welcome-title {
+        font-size: 20px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    .welcome-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .welcome-icon {
+        width: 70px;
+    }
+}
